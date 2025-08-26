@@ -1,0 +1,57 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: #123;
+}
+
+/* nav */
+/* nav > div */
+/* .logo */
+/* #logo_id */
+/* nav div.logo */
+/* nav div#logo_id */
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    /* height: 60px; */
+    padding: 10px 20px;
+}
+
+nav div.logo{
+color: #123;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+font-size: 40px;
+font-weight: bolder;
+}
+
+nav div.user-profile img{
+    width: 60px; 
+    height: 60px;
+    border-radius: 50%;
+    border: 2px dashed #000;
+}
+
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+
+nav ul li{
+    padding: 4px 20px;
+    margin: 0 20px;
+    background: #123;
+    color: #fff;
+    border-radius: 20px;
+}
+
+
+
+/* nav div:first-child */

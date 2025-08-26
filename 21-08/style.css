@@ -1,0 +1,54 @@
+
+
+label{
+        color: white !important;
+        background: black;
+        font-size: 12px;
+        padding: 5px;
+        
+
+    }
+
+    span{
+        background-color: red;
+        border: 1px solid black;
+    }
+
+    div{
+        background-color: blueviolet;
+        border: 1px solid black;
+        padding: 4px;
+        margin: 15px;
+    }
+
+    form{
+        width: 400px;
+        background-color: brown;
+        padding: 40px;
+        margin: 50px;
+        border: 20px solid yellow;
+        box-sizing: border-box;
+    }
+
+
+    .input-group{
+        background-color: aquamarine;
+    }
+
+    div#passwordcontainer label{
+        border-radius: 5px;
+    }
+
+    div.input-div > label{
+        border-radius: 20px;
+    }
+
+    .input-div{
+        border: 2px dashed black;
+    }
+
+    #passwordcontainer{
+        border: 4px dotted black;
+    }
+    
+    

@@ -1,0 +1,70 @@
+*{
+    box-sizing: border-box;
+}
+
+.main{
+    width: 400px;
+    padding: 40px;
+    background: #09e;
+}
+
+.main > p{
+    color: black;
+}
+
+.main p + div{
+color: yellow;
+}
+
+ p.paragraph  {
+    background: blueviolet !important;
+}
+
+
+.paragraph::first-letter{
+font-size: 30px;
+color: white;
+}
+
+/* div:first-child{
+    border: 1px solid red;
+}
+div:last-child{
+    border: 1px solid red;
+} */
+
+div .div-element:nth-child(4){
+    color: green;
+}
+
+main div:nth-of-type(even){
+    background-color: #ff0;
+}
+
+main div:not(.unique){
+    background-color: blue;
+}
+
+
+.main-2 div:hover{
+    background: yellow;
+    color: red;
+}
+
+button:active{
+    background-color: #ff0;
+    padding: 10px;
+}
+
+input:hover{
+    background: #0ff;
+}
+input:focus{
+    background: #464545;
+}
+
+input::placeholder{
+    color: red;
+}
+
+
