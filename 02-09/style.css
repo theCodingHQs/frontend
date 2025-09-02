@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100vh;
+  background: #eee;
+  border: 1px solid red;
+}
+
+form {
+  padding: 40px;
+  background: #90e;
+  width: 400px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 20px;
+  box-shadow: 4px 4px 20px #333;
+}
+
+form > div {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 10px #444;
+}
+
+form input {
+  padding: 6px;
+  border-radius: 4px;
+  border: 1px solid #aaa;
+}
+
+form label {
+  color: #444;
+  text-transform: capitalize;
+  font-size: 14px;
+}
+
+form .parent-btn {
+  padding: 4px;
+}
+form button {
+  padding: 6px;
+  border-radius: 10px;
+}
+
+.list {
+  background: #09e;
+  padding: 40px;
+  width: 400px;
+  height: 600px;
+  border-radius: 20px;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  margin: 10px;
+  background: #222;
+  color: #fff;
+  padding: 6px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 8;
+}
+
+ul li:hover {
+  background: #444;
+}
+
+ul li:before,
+ul li:after {
+  content: " ";
+  position: absolute;
+  height: 50%;
+  width: 0%;
+  background: #fff1;
+  transition: .3s;
+  z-index: -1;
+}
+
+ul li:before{
+left: 50%;
+top: 0;
+}
+
+ul li:after{
+right: 50%;
+  bottom: 0;
+}
+
+ul li:hover::before,
+ul li:hover::after{
+    width: 50%;
+}
+
+
+
+ul li:hover::before{
+}
+
+ul li:hover::after{
+}
+
+ul li span{
+    z-index: 10;
+}
