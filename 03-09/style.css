@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: space-around;
+  align-items: end;
+  padding: 20px;
+}
+.main {
+  width: 400px;
+  height: 400px;
+  background: red;
+
+  position: relative;
+  padding: 2px;
+  display: flex;
+}
+.main div {
+  width: 50px;
+  height: 50px;
+  background: white;
+  border: 1px solid black;
+  animation: animate-box 4s infinite;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@keyframes animate-box {
+  0% {
+  }
+  25% {
+    top: 0%;
+    left: 100%;
+    transform: rotate(360deg);
+  }
+  50% {
+    left: 100%;
+    top: 100%;
+  }
+  75% {
+    left: 0%;
+    top: 100%;
+    transform: rotate(360deg) scale(2);
+  }
+}
+
+.ball {
+  width: 30px;
+  height: 30px;
+  background: black;
+  border-radius: 50%;
+  animation: ball 0.8s ease-out infinite;
+  box-shadow: 0 0 20px black;
+}
+
+@keyframes ball {
+  0%,
+  100% {
+  }
+  75% {
+    transform: translateY(-100px);
+    box-shadow: 0 100px 30px black;
+  }
+}
+
+.container {
+  width: 100%;
+  background: #000;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container div {
+  width: 10%;
+  height: 100px;
+  background: red;
+  border: 1px solid white;
+  min-width: 100px;
+}
+
+@media (max-width: 700px) {
+  body {
+    background: red;
+  }
+
+  .container {
+    width: 60%;
+  }
+}
