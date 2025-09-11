@@ -18,16 +18,11 @@ var users = [
 
 for (let user = 0; user < users.length; user++) {
   //   users[user] = { age: age + 2 }; //
-
   //   users.age = age + 2;
   //   users[user].age = users[user].age + 2;    // users[user].age = age + 2; 
-
   //   users[user] = age + 2; 
-
   //   users[user] = users[user].age + 2; 
-
   //   users[user].age = age + 2; 
-
   users[user].age = users[user].age + 2;
 }
 
