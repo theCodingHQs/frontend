@@ -15,3 +15,20 @@ let name = "Rahul";
 name = name + " " + "surname";
 
 console.log(`my name is ${name}`);
+
+
+
+const myFunction = function () {
+  console.log("function called");
+};
+function myFunction2() {
+  console.log("function called");
+}
+
+const arrowFunction = () => {
+  console.log("function called");
+};
+
+myFunction();
+myFunction2();
+arrowFunction();
