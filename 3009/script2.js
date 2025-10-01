@@ -24,7 +24,7 @@ const filter = () => {
 
     const value = input.value
     // const filteredUsers = users.filter(u => { return u.name == value })
-    const filteredUsers = users.filter(u => { return u.name.includes(value) })
+    const filteredUsers = users.filter(u => { return u.age == value || u.name.includes(value) })
 
 
 
