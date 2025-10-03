@@ -11,10 +11,13 @@ const add = (n) => {
 }
 
 
-// 10
+// 10 + 9 + 8 + 7 + 6 + 5 + 4 + 3 + 2 + 1
 const sum = (n) => {
 
     if (n == 0) return n
 
-    return n + sum(n - 1)   //10 +  sum(n - 1) ...9 + sum(n - 1)...8 + ___...7............ 1
+    return n + sum(n - 1)
 }
+
+
+sum(5)
