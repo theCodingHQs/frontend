@@ -1,0 +1,100 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
+}
+body {
+  padding-top: 70px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 40px;
+  background: #dedede;
+  box-shadow: 4px 4px 6px #0004;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+nav .toggle {
+  display: none;
+}
+
+nav .toggle {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+nav ul li {
+  background: #fff;
+  padding: 4px 15px;
+}
+
+nav .logo {
+  border: 3px double #000;
+  padding: 4px 20px;
+  border-radius: 6px;
+  background: #fff;
+}
+
+nav button.logout {
+  border: 3px solid #000;
+  padding: 4px 20px;
+  border-radius: 6px;
+  background: #fff;
+  transition: all 0.1s ease-in-out;
+  cursor: pointer;
+}
+
+nav button.logout:hover {
+  background: #09e;
+  color: #fff;
+  transition: all 0.1s ease-in-out;
+}
+nav button.logout:active {
+  background: #fff;
+  color: #000;
+  transform: scale(0.9);
+}
+
+@media only screen and (max-width: 600px) {
+  nav {
+    background-color: #aa0;
+    height: 100vh;
+    align-items: start;
+    justify-content: start;
+    padding: 50px;
+    flex-direction: column;
+    left: -100%;
+  }
+
+  nav ul {
+    margin: 20px 0;
+    align-items: start;
+    width: 100%;
+    flex-direction: column;
+    gap: 4px;
+  }
+  nav ul li {
+    width: 100%;
+  }
+
+  nav .logo {
+    /* margin: auto; */
+  }
+
+  nav .toggle {
+    display: block;
+  }
+}
